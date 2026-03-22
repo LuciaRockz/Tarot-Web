@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Three Card Spread</title>
+</head>
+<body>
+    <h1>Three Card Spread</h1>
+    {% for result in results %}
+        <h3>{{ result.position }}</h3>
+        <p><strong>Card:</strong> {{ result.card }}</p>
+        <p><strong>Meaning:</strong> {{ result.meaning }}</p>
+        <hr>
+    {% endfor %}
+    <p><a href="/three">Draw Again</a></p>
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>
